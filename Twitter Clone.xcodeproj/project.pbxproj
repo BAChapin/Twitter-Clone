@@ -27,6 +27,10 @@
 		74A5ADC32C1BF82800A2682A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC22C1BF82800A2682A /* MessageCell.swift */; };
 		74A5ADC52C1BF9AF00A2682A /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC42C1BF9AF00A2682A /* TopBar.swift */; };
 		74A5ADC72C1BFA8B00A2682A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC62C1BFA8B00A2682A /* MainView.swift */; };
+		74A5ADC92C1BFAE500A2682A /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC82C1BFAE500A2682A /* SlideMenu.swift */; };
+		74A5ADCB2C1BFB7400A2682A /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADCA2C1BFB7400A2682A /* FollowView.swift */; };
+		74A5ADCD2C1BFB9400A2682A /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADCC2C1BFB9400A2682A /* ProfileImage.swift */; };
+		74A5ADCF2C1BFE7200A2682A /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADCE2C1BFE7200A2682A /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		74A5ADC22C1BF82800A2682A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		74A5ADC42C1BF9AF00A2682A /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		74A5ADC62C1BFA8B00A2682A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74A5ADC82C1BFAE500A2682A /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
+		74A5ADCA2C1BFB7400A2682A /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		74A5ADCC2C1BFB9400A2682A /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		74A5ADCE2C1BFE7200A2682A /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +177,9 @@
 			children = (
 				74A5ADB42C1BE21B00A2682A /* MultilineTextField.swift */,
 				74A5ADBA2C1BF1E700A2682A /* SearchBar.swift */,
+				74A5ADCA2C1BFB7400A2682A /* FollowView.swift */,
+				74A5ADCC2C1BFB9400A2682A /* ProfileImage.swift */,
+				74A5ADCE2C1BFE7200A2682A /* MenuButton.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 				74A5ADA82C1A9E7700A2682A /* HomeView.swift */,
 				74A5ADC42C1BF9AF00A2682A /* TopBar.swift */,
 				74A5ADC62C1BFA8B00A2682A /* MainView.swift */,
+				74A5ADC82C1BFAE500A2682A /* SlideMenu.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -302,6 +314,8 @@
 				74A5ADC32C1BF82800A2682A /* MessageCell.swift in Sources */,
 				74A5ADB92C1BF0D500A2682A /* SearchCell.swift in Sources */,
 				74A5ADB32C1BE18800A2682A /* CreateTweetView.swift in Sources */,
+				74A5ADC92C1BFAE500A2682A /* SlideMenu.swift in Sources */,
+				74A5ADCF2C1BFE7200A2682A /* MenuButton.swift in Sources */,
 				74A5ADAD2C1AA01600A2682A /* SearchView.swift in Sources */,
 				74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */,
 				74A5ADBB2C1BF1E700A2682A /* SearchBar.swift in Sources */,
@@ -309,8 +323,10 @@
 				74A5AD8F2C1A9CF500A2682A /* ContentView.swift in Sources */,
 				74A5ADC52C1BF9AF00A2682A /* TopBar.swift in Sources */,
 				74A5ADA92C1A9E7700A2682A /* HomeView.swift in Sources */,
+				74A5ADCB2C1BFB7400A2682A /* FollowView.swift in Sources */,
 				74A5ADB12C1AA03E00A2682A /* MessagesView.swift in Sources */,
 				74A5ADB52C1BE21B00A2682A /* MultilineTextField.swift in Sources */,
+				74A5ADCD2C1BFB9400A2682A /* ProfileImage.swift in Sources */,
 				74A5AD8D2C1A9CF500A2682A /* Twitter_CloneApp.swift in Sources */,
 				74A5ADAF2C1AA03000A2682A /* NotificationsView.swift in Sources */,
 				74A5ADC12C1BF63100A2682A /* NotificationCell.swift in Sources */,
