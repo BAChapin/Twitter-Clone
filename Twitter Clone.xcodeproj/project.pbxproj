@@ -23,6 +23,7 @@
 		74A5ADBB2C1BF1E700A2682A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBA2C1BF1E700A2682A /* SearchBar.swift */; };
 		74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */; };
 		74A5ADBF2C1BF54100A2682A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBE2C1BF54100A2682A /* Extensions.swift */; };
+		74A5ADC12C1BF63100A2682A /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC02C1BF63100A2682A /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		74A5ADBA2C1BF1E700A2682A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
 		74A5ADBE2C1BF54100A2682A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		74A5ADC02C1BF63100A2682A /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				74A5ADAE2C1AA03000A2682A /* NotificationsView.swift */,
+				74A5ADC02C1BF63100A2682A /* NotificationCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				74A5ADB52C1BE21B00A2682A /* MultilineTextField.swift in Sources */,
 				74A5AD8D2C1A9CF500A2682A /* Twitter_CloneApp.swift in Sources */,
 				74A5ADAF2C1AA03000A2682A /* NotificationsView.swift in Sources */,
+				74A5ADC12C1BF63100A2682A /* NotificationCell.swift in Sources */,
 				74A5ADBF2C1BF54100A2682A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
