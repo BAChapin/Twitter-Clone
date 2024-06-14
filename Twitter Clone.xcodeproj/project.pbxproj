@@ -21,6 +21,8 @@
 		74A5ADB72C1BE63000A2682A /* TweetCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADB62C1BE63000A2682A /* TweetCellView.swift */; };
 		74A5ADB92C1BF0D500A2682A /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADB82C1BF0D500A2682A /* SearchCell.swift */; };
 		74A5ADBB2C1BF1E700A2682A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBA2C1BF1E700A2682A /* SearchBar.swift */; };
+		74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */; };
+		74A5ADBF2C1BF54100A2682A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBE2C1BF54100A2682A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		74A5ADB62C1BE63000A2682A /* TweetCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCellView.swift; sourceTree = "<group>"; };
 		74A5ADB82C1BF0D500A2682A /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		74A5ADBA2C1BF1E700A2682A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
+		74A5ADBE2C1BF54100A2682A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 		74A5AD9E2C1A9E0200A2682A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				74A5ADBE2C1BF54100A2682A /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			children = (
 				74A5ADAC2C1AA01600A2682A /* SearchView.swift */,
 				74A5ADB82C1BF0D500A2682A /* SearchCell.swift */,
+				74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				74A5ADB92C1BF0D500A2682A /* SearchCell.swift in Sources */,
 				74A5ADB32C1BE18800A2682A /* CreateTweetView.swift in Sources */,
 				74A5ADAD2C1AA01600A2682A /* SearchView.swift in Sources */,
+				74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */,
 				74A5ADBB2C1BF1E700A2682A /* SearchBar.swift in Sources */,
 				74A5ADAB2C1AA00800A2682A /* FeedView.swift in Sources */,
 				74A5AD8F2C1A9CF500A2682A /* ContentView.swift in Sources */,
@@ -291,6 +298,7 @@
 				74A5ADB52C1BE21B00A2682A /* MultilineTextField.swift in Sources */,
 				74A5AD8D2C1A9CF500A2682A /* Twitter_CloneApp.swift in Sources */,
 				74A5ADAF2C1AA03000A2682A /* NotificationsView.swift in Sources */,
+				74A5ADBF2C1BF54100A2682A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

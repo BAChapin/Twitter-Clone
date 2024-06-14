@@ -18,10 +18,17 @@ struct SearchView: View {
             SearchBar(text: $searchText, isEditing: $isSearchEditing)
                 .padding(.horizontal)
             
-            List(0..<10) { i in
-                SearchCell(tag: "", tweets: "\(i)")
+            if !isSearchEditing {
+                List(0..<10) { i in
+                    SearchCell(tag: "", tweets: "\(i)")
+                }
+                .listStyle(.plain)
+            } else {
+                List(0..<10) { _ in
+                    SearchUserCell()
+                }
+                .listStyle(.plain)
             }
-            .listStyle(.plain)
         }
     }
 }
