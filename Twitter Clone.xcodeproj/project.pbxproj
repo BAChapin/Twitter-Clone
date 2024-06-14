@@ -16,6 +16,8 @@
 		74A5ADAD2C1AA01600A2682A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADAC2C1AA01600A2682A /* SearchView.swift */; };
 		74A5ADAF2C1AA03000A2682A /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADAE2C1AA03000A2682A /* NotificationsView.swift */; };
 		74A5ADB12C1AA03E00A2682A /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADB02C1AA03E00A2682A /* MessagesView.swift */; };
+		74A5ADB32C1BE18800A2682A /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADB22C1BE18800A2682A /* CreateTweetView.swift */; };
+		74A5ADB52C1BE21B00A2682A /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADB42C1BE21B00A2682A /* MultilineTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		74A5ADAC2C1AA01600A2682A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		74A5ADAE2C1AA03000A2682A /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		74A5ADB02C1AA03E00A2682A /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		74A5ADB22C1BE18800A2682A /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
+		74A5ADB42C1BE21B00A2682A /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 		74A5ADA02C1A9E2700A2682A /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				74A5ADB22C1BE18800A2682A /* CreateTweetView.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 		74A5ADA12C1A9E2E00A2682A /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				74A5ADB42C1BE21B00A2682A /* MultilineTextField.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -264,11 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A5ADB32C1BE18800A2682A /* CreateTweetView.swift in Sources */,
 				74A5ADAD2C1AA01600A2682A /* SearchView.swift in Sources */,
 				74A5ADAB2C1AA00800A2682A /* FeedView.swift in Sources */,
 				74A5AD8F2C1A9CF500A2682A /* ContentView.swift in Sources */,
 				74A5ADA92C1A9E7700A2682A /* HomeView.swift in Sources */,
 				74A5ADB12C1AA03E00A2682A /* MessagesView.swift in Sources */,
+				74A5ADB52C1BE21B00A2682A /* MultilineTextField.swift in Sources */,
 				74A5AD8D2C1A9CF500A2682A /* Twitter_CloneApp.swift in Sources */,
 				74A5ADAF2C1AA03000A2682A /* NotificationsView.swift in Sources */,
 			);
