@@ -24,6 +24,7 @@
 		74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */; };
 		74A5ADBF2C1BF54100A2682A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADBE2C1BF54100A2682A /* Extensions.swift */; };
 		74A5ADC12C1BF63100A2682A /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC02C1BF63100A2682A /* NotificationCell.swift */; };
+		74A5ADC32C1BF82800A2682A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADC22C1BF82800A2682A /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		74A5ADBC2C1BF41700A2682A /* SearchUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserCell.swift; sourceTree = "<group>"; };
 		74A5ADBE2C1BF54100A2682A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		74A5ADC02C1BF63100A2682A /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		74A5ADC22C1BF82800A2682A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				74A5ADB02C1AA03E00A2682A /* MessagesView.swift */,
+				74A5ADC22C1BF82800A2682A /* MessageCell.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74A5ADB72C1BE63000A2682A /* TweetCellView.swift in Sources */,
+				74A5ADC32C1BF82800A2682A /* MessageCell.swift in Sources */,
 				74A5ADB92C1BF0D500A2682A /* SearchCell.swift in Sources */,
 				74A5ADB32C1BE18800A2682A /* CreateTweetView.swift in Sources */,
 				74A5ADAD2C1AA01600A2682A /* SearchView.swift in Sources */,
