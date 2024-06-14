@@ -27,11 +27,8 @@ struct NotificationCell: View {
                     .frame(width: 20, height: 20)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
+                    ProfileImage(imageId: "logo")
                         .frame(width: 36, height: 36)
-                        .clipShape(Circle())
                     
                     HStack(spacing: 5) {
                         Text("Cam")

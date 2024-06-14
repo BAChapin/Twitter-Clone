@@ -19,11 +19,8 @@ struct MessageCell: View {
                 .opacity(0.3)
             
             HStack {
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
+                ProfileImage(imageId: "logo")
                     .frame(width: 60, height: 60)
-                    .clipShape(Circle())
                     .padding(.leading)
                 
                 VStack(alignment: .leading) {

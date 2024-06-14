@@ -18,11 +18,8 @@ struct TweetCellView: View {
         VStack {
             HStack(alignment: .top, spacing: 10, content: {
                 
-                Image("logo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
+                ProfileImage(imageId: "logo")
                     .frame(width: 55, height: 55)
-                    .clipShape(Circle())
                 
                 VStack(alignment: .leading, spacing: 10, content: {
                     HStack(spacing: 3) {

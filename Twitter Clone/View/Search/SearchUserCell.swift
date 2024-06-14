@@ -10,11 +10,8 @@ import SwiftUI
 struct SearchUserCell: View {
     var body: some View {
         HStack {
-            Image("logo")
-                .resizable()
-                .scaledToFit()
+            ProfileImage(imageId: "logo")
                 .frame(width: 44, height: 44)
-                .clipShape(Circle())
             
             VStack(alignment: .leading) {
                 Text("Cam")
