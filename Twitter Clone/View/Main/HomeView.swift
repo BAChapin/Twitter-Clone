@@ -18,6 +18,7 @@ struct HomeView: View {
             ZStack {
                 TabView {
                     FeedView()
+                        .navigationBarHidden(true)
                         .tag(0)
                         .onTapGesture {
                             selectedIndex = 0
@@ -33,6 +34,7 @@ struct HomeView: View {
                         }
                     
                     SearchView()
+                        .navigationBarHidden(true)
                         .tag(1)
                         .onTapGesture {
                             selectedIndex = 1
@@ -48,6 +50,7 @@ struct HomeView: View {
                         }
                     
                     NotificationsView()
+                        .navigationBarHidden(true)
                         .tag(2)
                         .onTapGesture {
                             selectedIndex = 2
@@ -63,6 +66,7 @@ struct HomeView: View {
                         }
                     
                     MessagesView()
+                        .navigationBarHidden(true)
                         .tag(3)
                         .onTapGesture {
                             selectedIndex = 3
