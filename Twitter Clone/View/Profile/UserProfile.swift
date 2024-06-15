@@ -31,7 +31,7 @@ struct UserProfile: View {
                             Image("banner")
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: UIScreen.main.bounds.width, height: minY > 0 ? 180 + minY : 180, alignment: .center)
+                                .frame(width: self.getRect().width, height: minY > 0 ? 180 + minY : 180, alignment: .center)
                                 .cornerRadius(0)
                             
                             BlurView()
@@ -85,46 +85,51 @@ struct UserProfile: View {
                     .padding(.top, -25)
                     .padding(.bottom, -20)
                     
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text("Cam")
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.primary)
-                        
-                        Text("150 tweets")
-                            .foregroundStyle(.gray)
-                        
-                        Text("This is my bio.")
-                        
-                        HStack(spacing:5) {
-                            Text("13")
+                    HStack {
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text("Cam")
+                                .font(.title2)
+                                .fontWeight(.bold)
                                 .foregroundStyle(.primary)
-                                .fontWeight(.semibold)
                             
-                            Text("Followers")
+                            Text("150 tweets")
                                 .foregroundStyle(.gray)
                             
-                            Text("680")
-                                .foregroundStyle(.primary)
-                                .fontWeight(.semibold)
-                                .padding(.leading, 10)
+                            Text("This is my bio.")
                             
-                            Text("Following")
-                                .foregroundStyle(.gray)
-                        }
-                    }
-                    .overlay(alignment: .top, content: {
-                        GeometryReader { proxy in
-                            let minY = proxy.frame(in: .global).minY
-                            
-                            DispatchQueue.main.async {
-                                self.titleOffset = minY
+                            HStack(spacing:5) {
+                                Text("13")
+                                    .foregroundStyle(.primary)
+                                    .fontWeight(.semibold)
+                                
+                                Text("Followers")
+                                    .foregroundStyle(.gray)
+                                
+                                Text("680")
+                                    .foregroundStyle(.primary)
+                                    .fontWeight(.semibold)
+                                    .padding(.leading, 10)
+                                
+                                Text("Following")
+                                    .foregroundStyle(.gray)
                             }
-                            
-                            return Color.clear
                         }
-                        .frame(width: 0, height: 0)
-                    })
+                        .overlay(alignment: .top, content: {
+                            GeometryReader { proxy in
+                                let minY = proxy.frame(in: .global).minY
+                                
+                                DispatchQueue.main.async {
+                                    self.titleOffset = minY
+                                }
+                                
+                                return Color.clear
+                            }
+                            .frame(width: 0, height: 0)
+                        })
+                        
+                        Spacer(minLength: 0)
+                    }
+                    .padding(.horizontal, 5)
                     
                     VStack(spacing: 0) {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -157,9 +162,26 @@ struct UserProfile: View {
                         .frame(width: 0, height: 0)
                     })
                     .zIndex(1)
+                    
+                    VStack(spacing: 10) {
+                        TweetCellView(tweet: "Hey Tim, are those regular glasses?", tweetImage: "post")
+                        
+                        Divider()
+                        
+                        ForEach(0..<20, id: \.self) { _ in
+                            TweetCellView(tweet: sampleText)
+                            
+                            Divider()
+                        }
+                    }
+                    .padding(.top)
+                    .zIndex(0)
                 }
+                .padding(.horizontal)
+                .zIndex(-offset > 80 ? 0 : 1)
             }
         }
+        .ignoresSafeArea(.all)
     }
     
     private func blurViewOpacity() -> Double {
