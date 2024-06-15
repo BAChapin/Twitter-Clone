@@ -94,17 +94,21 @@ struct WelcomeView: View {
                             .frame(width: self.getRect().width * 0.35, height: 1)
                     }
                     
-                    RoundedRectangle(cornerRadius: 36)
-                        .foregroundColor(Color("Twitter Blue"))
-                        .frame(width: 320, height: 60)
-                        .overlay(
-                            Text("Create account")
-                                .fontWeight(.bold)
-                                .font(.title3)
-                                .foregroundStyle(.white)
-                                .padding()
-                        )
-                    
+                    NavigationLink {
+                        RegisterView()
+                            .navigationBarHidden(true)
+                    } label: {
+                        RoundedRectangle(cornerRadius: 36)
+                            .foregroundColor(Color("Twitter Blue"))
+                            .frame(width: 320, height: 60)
+                            .overlay(
+                                Text("Create account")
+                                    .fontWeight(.bold)
+                                    .font(.title3)
+                                    .foregroundStyle(.white)
+                                    .padding()
+                            )
+                    }
                 }
                 .padding()
                 
@@ -140,8 +144,13 @@ struct WelcomeView: View {
                     HStack(spacing: 2) {
                         Text("Have an account already?")
                         
-                        Text("Log in")
-                            .foregroundStyle(Color("Twitter Blue"))
+                        NavigationLink {
+                            LoginView()
+                                .navigationBarHidden(true)
+                        } label: {
+                            Text("Log in")
+                                .foregroundStyle(Color("Twitter Blue"))
+                        }
                     }
                 }
             }

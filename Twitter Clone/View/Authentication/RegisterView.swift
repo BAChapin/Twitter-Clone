@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @State var name = ""
     @State var email = ""
     @State var password = ""
@@ -18,7 +19,7 @@ struct RegisterView: View {
             ZStack {
                 HStack {
                     Button {
-                        
+                        presentationMode.wrappedValue.dismiss()
                     } label: {
                         Text("Cancel")
                             .foregroundStyle(.blue)
