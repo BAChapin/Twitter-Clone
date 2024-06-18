@@ -10,6 +10,7 @@ import SwiftUI
 struct RegisterView: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @StateObject var viewModel = AuthViewModel()
     @State var name = ""
     @State var email = ""
     @State var password = ""
@@ -60,7 +61,7 @@ struct RegisterView: View {
                     Spacer()
                     
                     Button {
-                        
+                        self.viewModel.register(reqBody: ["name": name, "password": password, "username": "New User", "email": email])
                     } label: {
                         Capsule()
                             .frame(width: 60, height: 30, alignment: .center)
