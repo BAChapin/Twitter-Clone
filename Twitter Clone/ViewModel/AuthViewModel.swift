@@ -15,36 +15,20 @@ class AuthViewModel: ObservableObject {
         
     }
     
-    func register(reqBody: [String: Any]) {
-        let urlString = URL(string: "http://localhost:3000/users")!
-        let session = URLSession.shared
-        var request = URLRequest(url: urlString)
-        
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.httpMethod = "POST"
-        
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: reqBody, options: .prettyPrinted)
-        } catch {
-            print(error)
-        }
-        
-        let task = session.dataTask(with: request) { data, res, err in
-            guard err == nil else { return }
-            
-            guard let data = data else { return }
-            
-            do {
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    // Nothing
+    func register(name: String, username: String, email: String, password: String) {
+        AuthService.register(email: email, username: username, password: password, name: name) { result in
+            switch result {
+            case .success(let data):
+                guard let data = data,
+                      let user = try? JSONDecoder().decode(User.self, from: data) else {
+                    return
                 }
-            } catch {
+                print(user)
+            case .failure(let error):
                 print(error)
             }
         }
         
-        task.resume()
     }
     
     func logout() {

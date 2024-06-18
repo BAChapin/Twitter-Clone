@@ -40,6 +40,7 @@
 		74A5ADCF2C1BFE7200A2682A /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A5ADCE2C1BFE7200A2682A /* MenuButton.swift */; };
 		74CE77B22C21141A00033FC9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE77B12C21141A00033FC9 /* AuthViewModel.swift */; };
 		74CE77B42C21142100033FC9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE77B32C21142100033FC9 /* User.swift */; };
+		74CE77B62C211A4800033FC9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CE77B52C211A4800033FC9 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		74A5ADCE2C1BFE7200A2682A /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		74CE77B12C21141A00033FC9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		74CE77B32C21142100033FC9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74CE77B52C211A4800033FC9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		74A5AD9D2C1A9DFB00A2682A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				74CE77B52C211A4800033FC9 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				74A5ADBD2C1BF41700A2682A /* SearchUserCell.swift in Sources */,
 				74A5ADBB2C1BF1E700A2682A /* SearchBar.swift in Sources */,
 				74A5ADAB2C1AA00800A2682A /* FeedView.swift in Sources */,
+				74CE77B62C211A4800033FC9 /* AuthService.swift in Sources */,
 				74169D732C1E0EA6008ED43D /* CustomAuthTextField.swift in Sources */,
 				74A5ADC52C1BF9AF00A2682A /* TopBar.swift in Sources */,
 				74A5ADA92C1A9E7700A2682A /* HomeView.swift in Sources */,

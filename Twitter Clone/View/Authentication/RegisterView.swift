@@ -61,7 +61,8 @@ struct RegisterView: View {
                     Spacer()
                     
                     Button {
-                        self.viewModel.register(reqBody: ["name": name, "password": password, "username": "New User", "email": email])
+//                        self.viewModel.register(reqBody: ["name": name, "password": password, "username": "New User", "email": email])
+                        self.viewModel.register(name: name, username: "New User5", email: email, password: password)
                     } label: {
                         Capsule()
                             .frame(width: 60, height: 30, alignment: .center)
